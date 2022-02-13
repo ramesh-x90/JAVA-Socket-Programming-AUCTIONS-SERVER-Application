@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #e6f2ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serverSrc.RootController">
+   <children>
+      <TableView fx:id="table" blendMode="DARKEN" fixedCellSize="0.0" layoutX="11.0" layoutY="14.0" prefHeight="303.0" prefWidth="778.0" style="-fx-background-color: #e6e6ff;">
+         <columns>
+            <TableColumn fx:id="profit" editable="false" maxWidth="179.0" minWidth="179.0" prefWidth="179.0" resizable="false" text="Profit" />
+            <TableColumn fx:id="symbol" editable="false" maxWidth="198.0" minWidth="198.0" prefWidth="198.0" resizable="false" text="symbol" />
+            <TableColumn fx:id="c0" editable="false" maxWidth="285.0" minWidth="285.0" prefWidth="0.0" resizable="false" text="Biding">
+               <columns>
+                  <TableColumn fx:id="price" editable="false" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" resizable="false" text="current max price" />
+                  <TableColumn fx:id="bider" editable="false" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" resizable="false" text="max price bider" />
+               </columns>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <Label contentDisplay="RIGHT" layoutX="19.0" layoutY="365.0" prefHeight="27.0" prefWidth="72.0" text="status" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="398.0" prefHeight="18.0" prefWidth="83.0" text="Client server">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="L1" alignment="CENTER" layoutX="119.0" layoutY="398.0" prefHeight="18.0" prefWidth="64.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="L2" alignment="CENTER" layoutX="119.0" layoutY="429.0" prefHeight="18.0" prefWidth="64.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="429.0" prefHeight="18.0" prefWidth="83.0" text="Broker">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="time" alignment="CENTER" layoutX="177.0" layoutY="369.0" prefHeight="19.0" prefWidth="170.0" style="-fx-background-color: #e0e0d1; -fx-border-color: #000000;" text="time">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="log" layoutX="365.0" layoutY="366.0" prefHeight="229.0" prefWidth="421.0" style="-fx-border-color: #cccccc; -fx-background-color: #cccccc;" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <Label alignment="CENTER" layoutX="384.0" layoutY="344.0" prefHeight="17.0" prefWidth="36.0" text="Log">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="clients" layoutX="19.0" layoutY="501.0" prefHeight="18.0" prefWidth="218.0" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="pubsub" layoutX="19.0" layoutY="521.0" prefHeight="27.0" prefWidth="218.0" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Line endX="664.0" layoutX="136.0" layoutY="331.0" startX="-136.0" style="-fx-opacity: 0.5;" />
+   </children>
+</AnchorPane>
